@@ -1,0 +1,12 @@
+docker network create grafana-network
+
+
+docker network connect grafana-network grafana
+
+
+
+docker network connect grafana-network airflow_ea3c3c-postgres-1
+
+
+
+To connectg the airflow DB postgresDB to an external container ti grafana or any other system you need to create a network bridge connection with the commands above
