@@ -1,0 +1,13 @@
+Run the following after setting up the Virtual environment:
+
+astro dev start 
+
+It will initialize all the required containers in docker for the DAG,
+
+Configure the conections in DAG for postgress and the Weather API connections, Host (postgres the Docker Name )
+
+Use localhost:5432 default even if the port is different 
+
+To connect grafana create a new containier and connect to postgres using the docker container name for airflow and port number
+
+example:    airflow_ea3c3c-postgres-1:5432
